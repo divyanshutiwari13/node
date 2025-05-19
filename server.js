@@ -13,6 +13,7 @@ const Item = mongoose.model('Item', new mongoose.Schema({
     value: Number
 }));
 
+console.log("hello");
 app.get('/items', async (req, res) => {
     const items = await Item.find();
     res.json(items);
